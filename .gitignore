@@ -1,0 +1,9 @@
+# Vim Files
+*~
+*.sw[a-z0=9]
+
+# Bundler Files
+Gemfile.lock
+
+# HTML Artifacts
+*.html
