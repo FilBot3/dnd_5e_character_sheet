@@ -12,44 +12,46 @@
       </header>
       <article>
         <div><!-- Character Sheet -->
-          <div class="w3-row w3-indigo"><!-- Character and Player Names -->
+          <div class="w3-row w3-indigo" id="player-info"><!-- Character and Player Names -->
             <div class="w3-half"><!-- Character Name -->
               <text>Character Name: </text>
-              <text>Adrik Copperbeard</text>
+              <text id="player-info.character-name">Adrik Copperbeard</text>
             </div>
             <div class="w3-half"><!-- Character Information -->
               <div class="w3-row"><!-- Class and Level, Background, Player Name -->
-                <div class="w3-third">
+                <div class="w3-third" id="player-info.class-level">
                   <text>Class &amp; Level: </text>
-                  <text>Dwarf</text>
+                  <text id="player-info.class">Dwarf</text>
+                  <text> / </text>
+                  <text id="player-info.level">9</text>
                 </div>
                 <div class="w3-third">
                   <text>Background: </text>
-                  <text>Mountain Dwarf</text>
+                  <text id="player-info.background">Mountain Dwarf</text>
                 </div>
                 <div class="w3-third">
                   <text>Player Name: </text>
-                  <text>Phillip Dudley</text>
+                  <text id="player-info.player-name">Phillip Dudley</text>
                 </div>
               </div>
               <div class="w3-row"><!-- Race, Alignment, Experience Points -->
                 <div class="w3-third">
                   <text>Race: </text>
-                  <text>Dwarf</text>
+                  <text id="player-info.race">Dwarf</text>
                 </div>
                 <div class="w3-third">
                   <text>Alignment: </text>
-                  <text>Neutral</text>
+                  <text id="player-info.alignment">Neutral</text>
                 </div>
                 <div class="w3-third">
                   <text>Experience Points: </text>
-                  <text>9000</text>
+                  <text id="player-info.experience-points">9000</text>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w3-row"><!-- Page 1 -->
-            <div class="w3-third"><!-- First Column -->
+          <div class="w3-row" id="page-1"><!-- Page 1 -->
+            <div class="w3-third" id="page-1.column-1"><!-- First Column -->
               <div class="w3-row"><!-- Attributes and Skills -->
                 <div class="w3-half w3-yellow"><!-- Attributes -->
                   <div>
@@ -58,72 +60,72 @@
                   <div class="w3-border">
                     <div>
                       <text>Strength: </text>
-                      <text>15</text>
+                      <text id="attributes.strength.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.strength.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-border">
                     <div>
                       <text>Dexterity: </text>
-                      <text>15</text>
+                      <text id="attributes.dexterity.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.dexterity.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-border">
                     <div>
                       <text>Constitution: </text>
-                      <text>15</text>
+                      <text id="attributes.constitution.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.constitution.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-border">
                     <div>
                       <text>Intelligence: </text>
-                      <text>15</text>
+                      <text id="attributes.intelligence.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.intelligence.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-border">
                     <div>
                       <text>Wisdom: </text>
-                      <text>15</text>
+                      <text id="attributes.wisdom.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.wisdom.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-border">
                     <div>
                       <text>Charisma: </text>
-                      <text>15</text>
+                      <text id="attributes.charisma.value">15</text>
                     </div>
                     <div>
                       <text>Mod: </text>
-                      <text>3</text>
+                      <text id="attributes.charisma.mod">3</text>
                     </div>
                   </div>
                   <div class="w3-grey"><!-- Passive Wisdom/Perception -->
-                    <tex>[ ]</tex>
+                    <text id="passive-perception-wisdom">[ ]</text>
                     <text> Passive Wisdom/Perception</text>
                   </div>
                   <div class="w3-light-red"><!-- Other Proficienices and Languages -->
                     <div>
                       <text>Other Proficiencies &amp; Languages</text>
                     </div>
-                    <div>
+                    <div id="other-proficiencies">
                       <text>-</text>
                     </div>
                   </div>
@@ -131,111 +133,111 @@
                 <div class="w3-half"><!-- Skills -->
                   <div class="w3-border w3-amber"><!-- Inspiration -->
                     <text>Inspiration: </text>
-                    <text>[ ]</text>
+                    <text id="inspiration">[ ]</text>
                   </div>
                   <div class="w3-border w3-aqua"><!-- Proficiency Bonus -->
                     <text>Proficiency Bonus: </text>
-                    <text>3</text>
+                    <text id="proficiency-bonus">3</text>
                   </div>
-                  <div class="w3-border w3-deep-purple"><!-- Saving Throws -->
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                  <div class="w3-border w3-deep-purple" id="saving-throws"><!-- Saving Throws -->
+                    <div id="saving-throws.strength">
+                      <text id="saving-throws.strength.proficient">[ ] </text>
+                      <text id="saving-throws.strength.value">-</text>
                       <text> Strength</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="saving-throws.dexterity">
+                      <text id="saving-throws.dexterity.proficient">[ ] </text>
+                      <text id="saving-throws.dexterity.value">-</text>
                       <text> Dexterity</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="saving-throws.constitution">
+                      <text id="saving-throws.constitution.proficient">[ ] </text>
+                      <text id="saving-throws.constitution.value">-</text>
                       <text> Constitution</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="saving-throws.intelligence">
+                      <text id="saving-throws.intelligence.proficient">[ ] </text>
+                      <text id="saving-throws.intelligence.value">-</text>
                       <text> Intelligence</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="saving-throws.wisdom">
+                      <text id="saving-throws.wisdom.proficient">[ ] </text>
+                      <text id="saving-throws.wisdom.value">-</text>
                       <text> Wisdom</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="saving-throws.charisma">
+                      <text id="saving-throws.charisma.proficient">[ ] </text>
+                      <text id="saving-throws.charisma.value">-</text>
                       <text> Charisma</text>
                     </div>
                   </div>
                   <div class="w3-border w3-light-grey"><!-- Skills -->
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.acrobatic">
+                      <text id="skills.acrobatic.proficient">[ ] </text>
+                      <text id="skills.acrobatic.value">-</text>
                       <text> Acrobatic(Dex)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.animal-handling">
+                      <text id="skills.animal-handling.proficient">[ ] </text>
+                      <text id="skills.animal-handling.value">-</text>
                       <text> Animal Handling(Wis)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.arcana">
+                      <text id="skills.arcana.proficient">[ ] </text>
+                      <text id="skills.arcana.value">-</text>
                       <text> Arcana(Int)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.athletics">
+                      <text id="skills.athletics.proficient">[ ] </text>
+                      <text id="skills.athletics.value">-</text>
                       <text> Athletics(Str)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.deception">
+                      <text id="skills.deception.proficient">[ ] </text>
+                      <text id="skills.deception.value">-</text>
                       <text> Deception(Cha)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.history">
+                      <text id="skills.history.proficient">[ ] </text>
+                      <text id="skills.history.value">-</text>
                       <text> History(Int)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.insight">
+                      <text id="skills.insight.proficient">[ ] </text>
+                      <text id="skills.insight.value">-</text>
                       <text> Insight(Wis)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.intimidation">
+                      <text id="skills.intimidation.proficient">[ ] </text>
+                      <text id="skills.intimidation.value">-</text>
                       <text> Intimidation(Cha)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.investigation">
+                      <text id="skills.investigation.proficient">[ ] </text>
+                      <text id="skills.investigation.value">-</text>
                       <text> Investigation(Int)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.medicine">
+                      <text id="skills.medicine.proficient">[ ] </text>
+                      <text id="skills.medicine.value">-</text>
                       <text> Medicine(Wis)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.nature">
+                      <text id="skills.nature.proficient">[ ] </text>
+                      <text id="skills.nature.value">-</text>
                       <text> Nature(Int)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.perception">
+                      <text id="skills.perception.proficient">[ ] </text>
+                      <text id="skills.perception.value">-</text>
                       <text> Perception(Wis)</text>
                     </div>
-                    <div>
-                      <text>[ ] </text>
-                      <text>-</text>
+                    <div id="skills.perforance">
+                      <text id="skills.perforance.proficient">[ ] </text>
+                      <text id="skills.perforance.value">-</text>
                       <text> Performance(Cha)</text>
                     </div>
-                    <div>
+                    <div >
                       <text>[ ] </text>
                       <text>-</text>
                       <text> Persuasion(Cha)</text>
@@ -466,7 +468,7 @@
               </div>
             </div>
           </div>
-          <div><!-- Page 2 Spell Casting -->
+          <div id="page-2"><!-- Page 2 Spell Casting -->
             <div class="w3-row"><!-- Spell Class, ability, Save DC, Attack Bonus -->
               <div class="w3-quarter">
                 <text>Spell Casting Class: </text>
